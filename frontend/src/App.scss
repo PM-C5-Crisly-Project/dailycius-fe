@@ -223,5 +223,29 @@ $inner-shadow: inset -3px -3px 5px rgba(255,255,255, 0.5), inset 3px 3px 5px rgb
 		justify-content: center;
 		align-items: center;		
 		font-size: 8px;
+		box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.1 );
+	}
+}
+
+.directions {
+	max-width: 1200px;
+	margin:20px auto;
+	.directions__title {
+		color: $text-sencond-color;
+		font-weight: medium;
+		font-size: 1.5rem;
+	}	
+}
+
+.directions__steps {
+	list-style: none;
+	margin-top: 10px;
+	li h3 {
+		color: $text-sencond-color;
+		font-weight: normal;
+	}
+	li p {
+		color: $title-color;
+		margin-top: 10px;
 	}
 }

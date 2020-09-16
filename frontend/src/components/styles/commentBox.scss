@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$title-color: #818794;
+$text-sencond-color: #f5663b;
+$inner-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.5),
+  inset 3px 3px 5px rgba(158, 158, 158, 0.12);
+$inner-shadow-invert: 3px 3px 5px rgba(158, 158, 158, 0.12),
+  -3px -3px 5px rgba(255, 255, 255, 0.5);
+
+$primary-color: #f9f7f7;
+$color-secundary: #fd910b;
+$color-gradients: linear-gradient(
+  0deg,
+  #fd910b -11.54%,
+  #ef465f 89.74%,
+  #f5663b 89.74%
+);
+$color-terciary: white;
+
+/* --------------- CONSTANTS --------------- */
+
+$shadow-color: #bdb3bd;
+$shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+$border-gradients: rgb(249, 247, 247);
+$border-radius1: 20px;
+$border-radius2: 15px;
+
+* {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--primary-color);
+  font-family: var(--primary-fonts);
+}
+
+.commentBox {
+  box-shadow: $inner-shadow;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: $border-radius1;
+  color: $title-color;
+}
+
+.commentBox__title {
+  color: $text-sencond-color;
+  font-size: 1.5rem;
+  margin-left: 135px;
+}
+
+.commentBox__items--comment {
+  display: flex;
+  max-width: 290px;
+  height: auto;
+  padding: 10px;
+  margin: 30px auto 10px 30px;
+  border-radius: $border-radius2;
+  box-shadow: $inner-shadow-invert;
+  position: relative;
+  div {
+    position: absolute;
+    left: -25px;
+    top: -10px;
+    width: 35px;
+    height: 35px;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.commentBox__input--container {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  margin-top: 30px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: $inner-shadow;
+  border-radius: $border-radius1;
+}
+.commentBox__input {
+  width: 90%;
+  height: 80%;
+  padding: 15px;
+  color: $title-color;
+  border: none;
+  outline: $text-sencond-color;
+}
+.commentBox__input--button {
+  width: 10%;
+  outline: none;
+  border: none;
+  box-shadow: $inner-shadow;
+}
+
+.commentBox__input--button {
+	width: 20px;
+	height: 20px;
+	box-shadow:
+		inset -1px -1px 2px rgba(255,255,255, 0.5), 
+		inset 1px 1px 2px rgba(158, 158, 158, 0.12);
+	border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+	div {
+		width: 100%;
+		height: 100%;
+		color: white;
+		background: linear-gradient(90deg, #FD910B, #F5663B, );
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;		
+		font-size: 8px;
+		box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.1 );
+	}
+}
