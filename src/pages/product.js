@@ -2,7 +2,7 @@ import React from 'react';
 import CommentBox from '../components/commentBox'
 import photo from '../assets/image-hero.png'
 
-function Home() {
+function Product() {
 
 return <>
 
@@ -181,4 +181,4 @@ return <>
 </>
 }
 
-export default Home;
+export default Product;

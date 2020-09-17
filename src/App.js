@@ -2,12 +2,12 @@ import React from "react";
 import './App.scss'
 import Nav from './components/Nav'
 
-import Home from './pages/Home';
+import Product from './pages/product';
 
 const App = () => (
   <div>
     <Nav />
-    <Home />
+    <Product />
     
   </div>
 );
