@@ -1,4 +1,5 @@
 {
+  "homepage":"https://PM-C5-Crisly-Project.github.io/dailycius-fe", 
   "name": "dailycius",
   "version": "1.0.0",
   "description": "",
@@ -6,7 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --open",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,7 @@
   },
   "devDependencies": {
     "css-loader": "^4.2.2",
+    "gh-pages": "^3.1.0",
     "mini-css-extract-plugin": "^0.11.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.0.2"
