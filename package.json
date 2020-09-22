@@ -1,5 +1,5 @@
 {
-  "homepage":"https://PM-C5-Crisly-Project.github.io/dailycius-fe", 
+  "homepage": "https://PM-C5-Crisly-Project.github.io/dailycius-fe",
   "name": "dailycius",
   "version": "1.0.0",
   "description": "",
@@ -23,6 +23,7 @@
     "html-webpack-plugin": "^4.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "scss-loader": "0.0.1",
     "style-loader": "^1.2.1",
