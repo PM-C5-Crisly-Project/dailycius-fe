@@ -8,7 +8,6 @@
     padding: 0px;
     background-color: var(--primary-color);
     font-family: var(--primary-fonts);
-
     
 }
 
@@ -54,7 +53,7 @@
 
 /* --------------- HERO--------------- */
 
-.hero {
+.home-hero {
 
 
 	height: auto;
@@ -143,22 +142,24 @@
 
 .hero__text {
 
-	padding-left: 20px;
+  padding-left: 20px;
+  background-color: transparent;
 	
 }
 
 .hero__text p  {
 
 	padding-top: 10px;
-	font-size: var(--main-size2);
+	font-size: 2rem;
 	font-weight: bold;
 	line-height: 98.6%;
-	background-color: transparent;
+  background-color: transparent;
 } 
 
 .hero_questions {
 
-	color: var(--text-color1);
+  color: var(--text-color1);
+  background-color: transparent;
 }
 
 .hero__search-icon {
@@ -223,7 +224,7 @@
 
 .project-container {
 
-	width: 1700px;
+  width: 1700px;
 	left: 0;
 	position: relative;
 
@@ -254,8 +255,8 @@
 .project-img {
 
 	display: flex;
-	width: 178px;
-	height: 178px;
+	width: 140px;
+	height: 140px;
 	margin: 0 10px;
 	transition: all 0.2s ease-in-out;
 	object-fit: cover; 
@@ -269,15 +270,15 @@
 .project1, .project2, .project3, .project4 {
 
 	display: flex;
-	width: 200px;
-	height: 200px;
+	width: 160px;
+	height: 160px;
 	margin: 10px;
 	color: var(--title-color);
 	border-radius: 50%;
 	box-shadow: var(--shadow2);
 	justify-content: center;
 	align-items: center;
-
+  transition: .3s;
 }
 
 .project:hover {
@@ -488,7 +489,7 @@ input[type="star"]:checked ~ label {
 
 .banner__text {
 
-	max-width: 250px;
+	max-width: 300px;
 	background: transparent;
 	font-size: 4rem;
 	color: var(--primary-color);

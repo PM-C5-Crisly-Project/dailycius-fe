@@ -1,0 +1,112 @@
+*{
+  background-color: #F9F7F7;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.register__container {
+  width: 500px;
+  height: auto;
+  padding: 20px 70px;
+  margin: 50px auto;
+  box-shadow:
+		inset -1px -1px 3px rgb(255, 255, 255), 
+		inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    text-align: center;
+    margin: 50px;
+    color: #F5663B;
+    font-weight: 500;
+  }
+}
+
+.register__container--form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  label {
+    color: #818794;
+    margin: 10px;
+    width: 100%;
+  }
+  input {
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow:
+		inset -1px -1px 3px rgba(255, 255, 255, 0.801), 
+		inset 1px 1px 3px rgba(158, 158, 158, 0.747);
+    border: none;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #818794;
+    outline: none;
+  }
+}
+
+.button__container {
+  height: 33px;
+	width: 193px;
+	box-shadow:
+		inset -1px -1px 3px rgba(255, 255, 255, 0.801), 
+    inset 1px 1px 3px rgba(158, 158, 158, 0.747);
+  border: none;
+	border-radius: var(--border-radius1);
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+  margin: 20px auto;
+  button {
+    width: 100%;
+	height: 100%; 
+	border-radius: var(--border-radius2);
+	background: linear-gradient(90deg, #FD910B, #F5663B, );
+	border: none;
+	color: var(--color-terciary);
+	cursor: pointer;
+	box-shadow: 
+		inner 0px 2px 3px rgba(0, 0, 0, 0.15)
+		0px 1px 2px 1px rgba(0, 0, 0, 0.15),
+		;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	font-size: .65rem;
+	outline: none;
+	text-transform: uppercase;
+  }
+}
+
+.register__container--social-media {
+  display: flex;
+  margin: 0 auto;
+}
+
+.register__container--social-media div{
+  margin: 18px;
+  width: 55px;
+  height: 55px;
+  border-radius: 20px;
+  box-shadow:
+		inset 1px 1px 3px rgba(255, 255, 255, 0.801), 
+    inset -1px -1px 3px rgba(158, 158, 158, 0.747);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+}
+
+.register__container--register {
+  color: #818794;
+  margin: 50px 0;
+  a {
+    color: #F5663B;
+    
+  }
+}

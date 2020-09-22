@@ -5,35 +5,33 @@ import car from "../assets/car.png";
 import avatar from "../assets/avatar.png";
 import search from "../assets/search.png";
 
-function Nav() {
-  return (
-    <div>
-      <div className="header">
-        <img className="header__img" src={logo} alt="logo" />
-        <div className="header__menu">
-          <nav className="header__options">
-            <ul className="header__options--ul">
-              <li>
-                <a href="#">
-                  <img src={search} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src={car} />
-                </a>
-              </li>
-              <li>
-                <a href="/login">
-                  <img src={avatar} />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+const Nav = () => (
+  <div className="header">
+    <div className="header__container">
+      <img className="header__img" src={logo} alt="logo" />
+      <div className="header__menu">
+        <nav className="header__options">
+          <ul className="header__options--ul">
+            <li>
+              <a href="#">
+                <img src={search} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={car} />
+              </a>
+            </li>
+            <li>
+              <a href="/login">
+                <img src={avatar} />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default Nav;
