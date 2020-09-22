@@ -7,7 +7,7 @@ import Register from "../pages/Register";
 import Error404 from "../pages/Error404";
 import Layout from "../components/Layout";
 
-const Routes = () => (
+const PageRoutes = () => (
   <BrowserRouter>
     <Layout>
       <Switch>
@@ -21,4 +21,4 @@ const Routes = () => (
   </BrowserRouter>
 );
 
-export default Routes;
+export default PageRoutes;
