@@ -1,15 +1,7 @@
 import React from "react";
-import './App.scss'
-import Nav from './components/Nav'
+import Routes from "./routes/Routes";
+import "./App.scss";
 
-import Home from './pages/Home';
-
-const App = () => (
-  <div>
-    <Nav />
-    <Home />
-    
-  </div>
-);
+const App = () => <Routes />;
 
 export default App;
