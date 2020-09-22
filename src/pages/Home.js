@@ -9,7 +9,7 @@ import banner from '../assets/home/banner.png'
 function Home() {
 
 return <>
-	<section className="hero">
+	<section className="home-hero">
 		<img className="hero__chef" src={chefImg} alt="chef-hero" />
     
 			<section className="card-input">
