@@ -3,6 +3,7 @@ import "./styles/register.scss";
 
 import googleIcon from "../assets/login/google.png";
 import facebookIcon from "../assets/login/facebook.png";
+import { Link } from "react-router-dom";
 
 function Register() {
   return (
@@ -48,7 +49,7 @@ function Register() {
           </section>
           <p className="register__container--register">
             I have an account {` `}
-            <a to="/sign-in">Sign-In</a>
+            <Link to="/login">Sign-In</Link>
           </p>
         </section>
       </section>

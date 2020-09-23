@@ -3,6 +3,7 @@ import "./styles/login.scss";
 
 import googleIcon from "../assets/login/google.png";
 import facebookIcon from "../assets/login/facebook.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -41,7 +42,7 @@ function Login() {
           </section>
           <p className="login__container--register">
             New Here? {` `}
-            <a to="/register">Sign-Up</a>
+            <Link to="/register">Sign-Up</Link>
           </p>
         </section>
       </section>
