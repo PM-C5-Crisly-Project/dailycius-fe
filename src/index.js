@@ -5,12 +5,12 @@ import { createStore } from "redux";
 import reducer from "./reducers";
 import App from "./App";
 
-const initialState = {
+export const initialState = {
   user: {},
   cart: [],
   recipes: [
     {
-      id: 1,
+      id: "1",
       category: "_id",
       name: "Peanut butter and jelly puffs",
       description: "Delicius receipe for your family ",
@@ -34,7 +34,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 2,
+      id: "2",
       category: "_id",
       name: "Sheet pan breakfast bake",
       description: "Delicius receipe for your family ",
@@ -65,7 +65,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 3,
+      id: "3",
       category: "_id",
       name: "Pizza Scrolls",
       description: "Delicius receipe for your family ",
@@ -94,7 +94,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 4,
+      id: "4",
       category: "_id",
       name: "Kittencals's moist cheddar",
       description: "Delicius receipe for your family ",
@@ -128,7 +128,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 5,
+      id: "5",
       category: "_id",
       name: "Classic Potato Salad",
       description: "Delicius receipe for your family ",
@@ -164,7 +164,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 6,
+      id: "6",
       category: "_id",
       name: "Perfect Pork Tenderloin",
       description: "Delicius receipe for your family ",
@@ -187,7 +187,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 7,
+      id: "7",
       category: "_id",
       name: "waffle Cone Fried Chicken",
       description: "Delicius receipe for your family ",
@@ -220,7 +220,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 8,
+      id: "8",
       category: "_id",
       name: "Hamburgers",
       description: "Delicius receipe for your family ",
@@ -251,7 +251,7 @@ const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: 9,
+      id: "9",
       category: "_id",
       name: "Yogurth Fruit Bars",
       description: "Delicius receipe for your family ",
@@ -287,7 +287,7 @@ const initialState = {
       "qualificat ion": [{ id: "number" }],
     },
     {
-      id: 10,
+      id: "10",
       category: "_id",
       name: "Cheesy Taco Pockets",
       description: "Delicius receipe for your family ",
@@ -320,6 +320,7 @@ const initialState = {
       comments: [{ id: "text" }],
       qualification: [{ id: "number" }],
     },
+    
   ],
 };
 

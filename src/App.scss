@@ -55,9 +55,13 @@ $inner-shadow: inset -3px -3px 5px rgba(255,255,255, 0.5), inset 3px 3px 5px rgb
 	width: 60%;
 	max-width: 760px;
 	height: 100%;	
-	border-radius: var(--border-radius1);
+	border-radius: 20px;
 	margin-left: 0 20px;
 	justify-content: center;
+}
+
+.hero__image img{
+	border-radius: 20px;
 }
 
 .hero__button {

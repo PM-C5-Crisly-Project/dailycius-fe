@@ -26,9 +26,9 @@ const Nav = () => (
               </a>
             </li>
             <li>
-              <a href="/login">
+              <Link to="/login">
                 <img src={avatar} />
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

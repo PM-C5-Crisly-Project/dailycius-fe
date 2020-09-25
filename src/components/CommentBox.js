@@ -2,7 +2,7 @@ import React from "react";
 import './styles/commentBox.scss'
 
 
-function commentBox() {
+function CommentBox() {
 
   return <div className='commentBox'>
     <div className='commentBox__title'>comments</div>
@@ -32,4 +32,4 @@ function commentBox() {
 }
 
 
-export default commentBox;
+export default CommentBox;

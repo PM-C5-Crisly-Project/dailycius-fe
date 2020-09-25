@@ -1,12 +1,15 @@
 import React from "react";
-import imageCard from "../assets/home/imageCard.png";
+import {Link} from 'react-router-dom'
+//import data from '../../mock';
 
-const Card = (props) => {
-  const { id, name, photos } = props;
+const Card = ({id, name, photos}) => {
+  
   return (
     <div className="cards">
-      <img className="cards__img" src={photos} alt={name} />
-      <p className="cards__title">{name}</p>
+      <Link to={'/product/' + id}>
+        <img className="cards__img" src={photos} alt={name} />
+        <p className="cards__title">{name}</p>
+      </Link>
       {/* <form className="cards__stars">
       <p className="clasificacion">
         <input id="star1" type="star" name="star" readOnly="5" />
