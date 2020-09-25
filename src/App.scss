@@ -50,6 +50,10 @@ $inner-shadow: inset -3px -3px 5px rgba(255,255,255, 0.5), inset 3px 3px 5px rgb
 	}
 }
 
+.hero__panel h2 {
+	text-transform: capitalize;
+}
+
 .hero__image {
 	display: flex;
 	width: 60%;
