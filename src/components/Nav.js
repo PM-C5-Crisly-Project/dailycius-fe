@@ -21,9 +21,9 @@ const Nav = () => (
               </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/cart/">
                 <img src={car} />
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/login">

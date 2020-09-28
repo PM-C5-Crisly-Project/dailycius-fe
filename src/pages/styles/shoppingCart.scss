@@ -1,0 +1,208 @@
+
+.shoppinCart__container {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shoppinCart__products {
+  width: 70%;
+  padding: 50px;
+  margin-right: 30px;
+  border-radius: 20px;
+  box-shadow: inset -1px -1px 3px rgb(255, 255, 255), 
+  inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.shoppinCart__products--header {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #F5663B;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.shoppinCart__products--columnNames {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.shoppinCart__products--columnNamesL {
+  list-style: none;  
+  display: flex;
+  color: #818794;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.shoppinCart__products--columnNamesR {
+  list-style: none; 
+  display: flex; 
+  justify-content: space-between;
+  color: #818794;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.shoppinCart__products--data {
+  width: 100%;
+  display: flex;
+  height: auto;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: -1px -1px 3px rgb(255, 255, 255), 
+    1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shoppinCart__products--dataL {
+    width: 50%;
+  }
+  .shoppinCart__products--dataR {
+    width: 50%;
+  }
+  img {
+    border-radius: 10px;
+    width: 60px;
+  }
+}
+
+.data__shoppingDetails {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  p {
+    font-size: .7rem;
+    width: 60%;
+    margin-left: 5px;
+    color: #818794;
+  }
+}
+
+.data__qty {
+  display: flex;
+  align-items: center;
+  div {
+    width: 40px;
+    color: #818794;
+    font-size: .7rem;
+    display: flex;
+    height: 26px;
+    border-radius: 13px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    box-shadow:inset -1px -1px 3px rgb(255, 255, 255), 
+    inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border: none;
+    background: linear-gradient(-90deg, #FD910B 10%, #EF465F 90%, #F5663B 89.74%);
+    color: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: -1px -1px 3px rgb(255, 255, 255), 
+      1px 1px 3px rgba(0, 0, 0, 0.2), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:before {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    content: '';
+    box-shadow:inset -1px -1px 3px rgb(255, 255, 255), 
+    inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.data__price, .data__total {
+  color: #818794;
+  font-size: .7rem;
+  padding: 0 5px;
+  width: auto;
+  display: flex;
+  height: 26px;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  box-shadow:inset -1px -1px 3px rgb(255, 255, 255), 
+  inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*CHECKOUT*/
+
+.shoppinCart__checkout {
+  width:30%;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: inset -1px -1px 3px rgb(255, 255, 255), 
+  inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.shoppinCart__checkout--title {
+  color: #F5663B;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.shoppinCart__checkout--items {
+  list-style: none;
+  color: #818794;
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+
+.shoppinCart__checkout--items-total {
+  font-weight: 500;
+}
+
+.shoppinCart__checkout--items-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: linear-gradient(90deg, #FD910B 10%, #EF465F , #F5663B 90%);
+  color: white;
+  width: 175px;
+  margin: 50px auto 0;
+  height: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: -1px -1px 3px rgb(255, 255, 255), 
+    1px 1px 3px rgba(0, 0, 0, 0.2), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.shoppinCart__checkout--items-button:before {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 180px;
+  height: 26px;
+  border-radius: 13px;
+  content: '';
+  box-shadow:inset -1px -1px 3px rgb(255, 255, 255), 
+  inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
