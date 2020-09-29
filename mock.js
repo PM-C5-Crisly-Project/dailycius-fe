@@ -3,7 +3,7 @@ export default {
   data:  [
     {
       id: "001",
-      category: "_id",
+      category: "beackfrast",
       name: "Peanut butter and jelly puffs",
       description: "Delicius receipe for your family ",
       popular: false,

@@ -4,9 +4,9 @@ import {initialState} from '../index';
 
 function Product(props) {
 
-	console.log(props.match.params.id)
+	
 	const recipe = initialState.recipes.find(e => e.id === props.match.params.id)
-	console.log(recipe)
+	
 	
 return <>
 
@@ -18,13 +18,13 @@ return <>
 			<div className='hero__panel--data'>	
 				<div className="hero__buttons-data">
 					<ul>
-						<li className='hero__buttons-data--qty'>4</li>
+						<li className='hero__buttons-data--qty'>{recipe.ingredients.length}</li>
 						<li className='hero__buttons-data--desc'>Ingredients</li>
 					</ul>
 				</div>
 				<div className="hero__buttons-data">
 					<ul>
-						<li className='hero__buttons-data--qty'>300</li>
+						<li className='hero__buttons-data--qty'>{(recipe.ingredients.length)*7}</li>
 						<li className='hero__buttons-data--desc'>Calories</li>
 					</ul>
 				</div>

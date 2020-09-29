@@ -11,7 +11,7 @@ export const initialState = {
   recipes: [
     {
       id: "1",
-      category: "_id",
+      category: "breakfast",
       name: "Peanut butter and jelly puffs",
       description: "Delicius receipe for your family ",
       popular: false,
