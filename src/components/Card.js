@@ -1,13 +1,14 @@
 import React from "react";
-import imageCard from "../assets/home/imageCard.png";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   const { id, name, photos } = props;
   return (
-    <div className="cards">
-      <img className="cards__img" src={photos} alt={name} />
-      <p className="cards__title">{name}</p>
-      {/* <form className="cards__stars">
+    <Link to="/product">
+      <div className="cards">
+        <img className="cards__img" src={photos} alt={name} />
+        <p className="cards__title">{name}</p>
+        {/* <form className="cards__stars">
       <p className="clasificacion">
         <input id="star1" type="star" name="star" readOnly="5" />
         <label htmlFor="star1">★</label>
@@ -21,7 +22,8 @@ const Card = (props) => {
         <label htmlFor="star5">★</label>
       </p>
     </form> */}
-    </div>
+      </div>
+    </Link>
   );
 };
 
