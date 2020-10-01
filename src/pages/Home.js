@@ -60,7 +60,7 @@ function Home({ recipes }) {
       </section>
       <FoodSection title="Today's Favorites">
         {recipes.map((item) => (
-          <Card key={item.id} {...item} />
+          <Card key={item.name} {...item} />
         ))}
       </FoodSection>
 
@@ -69,11 +69,11 @@ function Home({ recipes }) {
         <p className="banner__text">Seasonals special´s</p>
       </section>
 
-      <FoodSection>
+      {/* <FoodSection>
         {recipes.map((item) => (
           <Card key={item.id} {...item} />
         ))}
-      </FoodSection>
+      </FoodSection> */}
     </>
   );
 }

@@ -1,12 +1,12 @@
-import React from 'react';
+import React  from 'react';
 import CommentBox from '../components/CommentBox'
 import {initialState} from '../index';
 
+
+
 function Product(props) {
 
-	
 	const recipe = initialState.recipes.find(e => e.id === props.match.params.id)
-	
 	
 return <>
 
@@ -36,36 +36,13 @@ return <>
 				</div>
 			</div>
 				<div className="hero__button">
-					<button className="hero__button--add">Add to cart</button>
+					<button
+						id={recipe.id}
+						className="hero__button--add"
+						//onClick={handleAddCart}
+					>Add to cart</button>
 				</div>
 				<div className='hero__nutritional--container'>
-					<div className="hero__receipe-details--container">
-						<div className="hero__receipe-details--inner">
-							<ul className="hero__receipe-details--data">
-								<li>200</li>
-								<li>calories</li>
-							</ul>
-						</div>
-					</div>
-					
-					<div className="hero__receipe-details--container">
-						<div className="hero__receipe-details--inner">
-							<ul className="hero__receipe-details--data">
-								<li>200</li>
-								<li>calories</li>
-							</ul>
-						</div>
-					</div>
-					
-					<div className="hero__receipe-details--container">
-						<div className="hero__receipe-details--inner">
-							<ul className="hero__receipe-details--data">
-								<li>200</li>
-								<li>calories</li>
-							</ul>
-						</div>
-					</div>
-					
 					<div className="hero__receipe-details--container">
 						<div className="hero__receipe-details--inner">
 							<ul className="hero__receipe-details--data">
@@ -110,7 +87,7 @@ return <>
 			<ul>
 				{
 					recipe.ingredients.map((item, i) => (
-						<li key={recipe.id}{...item}>
+						<li key={item.id}>
 							<div className='ingre__list--plus'>
 								<div>&#10010;</div>
 							</div>
@@ -129,9 +106,9 @@ return <>
 
 		<ul className='directions__steps'>
 
-		{
+				{
 					recipe.direction.map((item, i) => (
-						<li key={recipe.id}{...item}>
+						<li key={item.name}>
 							
 							<p>
 							{recipe.direction[i]}

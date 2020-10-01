@@ -13,7 +13,7 @@ const PageRoutes = () => (
     <Layout>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/cart" component={ShoppingCart} />
+        <Route exact path="/cart/:id?" component={ShoppingCart} />
         <Route exact path="/product/:id" component={Product} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
