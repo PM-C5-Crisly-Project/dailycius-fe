@@ -52,6 +52,10 @@
 }
 
 /* --------------- HERO--------------- */
+a {
+	text-decoration: none;
+}
+
 
 .home-hero {
 
@@ -402,6 +406,7 @@
 .cards .cards__title {
 	color: #818794;
 	margin: 20px 20px 10px 20px;
+	text-decoration: none;
 }
 
 .cards p {

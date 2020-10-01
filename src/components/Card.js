@@ -1,14 +1,28 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+import {Link} from 'react-router-dom'
+//import data from '../../mock';
+>>>>>>> 123e6cf578d4d9dc09c3348379b0755c6002dae8
 
-const Card = (props) => {
-  const { id, name, photos } = props;
+const Card = ({id, name, photos}) => {
+  
   return (
+<<<<<<< HEAD
     <Link to="/product">
       <div className="cards">
         <img className="cards__img" src={photos} alt={name} />
         <p className="cards__title">{name}</p>
         {/* <form className="cards__stars">
+=======
+    <div className="cards">
+      <Link to={'/product/' + id}>
+        <img className="cards__img" src={photos} alt={name} />
+        <p className="cards__title">{name}</p>
+      </Link>
+      {/* <form className="cards__stars">
+>>>>>>> 123e6cf578d4d9dc09c3348379b0755c6002dae8
       <p className="clasificacion">
         <input id="star1" type="star" name="star" readOnly="5" />
         <label htmlFor="star1">★</label>

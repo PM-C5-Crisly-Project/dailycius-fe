@@ -1,17 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { createStore } from "redux";
-import reducer from "./reducers";
-import App from "./App";
 
-export const initialState = {
-  user: {},
-  cart: [],
-  recipes: [
+export default {
+  data:  [
     {
-      id: "1",
-      category: "breakfast",
+      id: "001",
+      category: "beackfrast",
       name: "Peanut butter and jelly puffs",
       description: "Delicius receipe for your family ",
       popular: false,
@@ -34,7 +26,7 @@ export const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: "2",
+      id: "002",
       category: "_id",
       name: "Sheet pan breakfast bake",
       description: "Delicius receipe for your family ",
@@ -65,7 +57,7 @@ export const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: "3",
+      id: "003",
       category: "_id",
       name: "Pizza Scrolls",
       description: "Delicius receipe for your family ",
@@ -89,12 +81,12 @@ export const initialState = {
         "1/4. cup pizza sauce",
         "2. sheets ready rolled puff pastry",
       ],
-      price: 400,
+      price: "400",
       comments: [{ id: "text" }],
       qualification: [{ id: "number" }],
     },
     {
-      id: "4",
+      id: "004",
       category: "_id",
       name: "Kittencals's moist cheddar",
       description: "Delicius receipe for your family ",
@@ -128,7 +120,7 @@ export const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: "5",
+      id: "005",
       category: "_id",
       name: "Classic Potato Salad",
       description: "Delicius receipe for your family ",
@@ -164,7 +156,7 @@ export const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: "6",
+      id: "006",
       category: "_id",
       name: "Perfect Pork Tenderloin",
       description: "Delicius receipe for your family ",
@@ -187,7 +179,7 @@ export const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: "7",
+      id: "007",
       category: "_id",
       name: "waffle Cone Fried Chicken",
       description: "Delicius receipe for your family ",
@@ -220,7 +212,7 @@ export const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: "8",
+      id: "008",
       category: "_id",
       name: "Hamburgers",
       description: "Delicius receipe for your family ",
@@ -251,7 +243,7 @@ export const initialState = {
       qualification: [{ id: "number" }],
     },
     {
-      id: "9",
+      id: "009",
       category: "_id",
       name: "Yogurth Fruit Bars",
       description: "Delicius receipe for your family ",
@@ -287,7 +279,7 @@ export const initialState = {
       "qualificat ion": [{ id: "number" }],
     },
     {
-      id: "10",
+      id: "010",
       category: "_id",
       name: "Cheesy Taco Pockets",
       description: "Delicius receipe for your family ",
@@ -320,15 +312,13 @@ export const initialState = {
       comments: [{ id: "text" }],
       qualification: [{ id: "number" }],
     },
-    
-  ],
-};
+  ]
+}
 
-const store = createStore(reducer, initialState);
 
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.querySelector("#root")
-);
+
+
+//AGREGAR COMENTARIOS
+//CALIFICACION
+
+// ORDEN DEL ARRAY PUEDE CAMBIAR?

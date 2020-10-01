@@ -33,6 +33,10 @@ $border-radius2: 15px;
   font-family: var(--primary-fonts);
 }
 
+ul {
+  list-style: none;
+}
+
 .commentBox {
   box-shadow: $inner-shadow;
   margin-top: 20px;
@@ -49,6 +53,7 @@ $border-radius2: 15px;
 
 .commentBox__items--comment {
   display: flex;
+  justify-content: space-between;
   max-width: 290px;
   height: auto;
   padding: 10px;
@@ -121,4 +126,33 @@ $border-radius2: 15px;
 		font-size: 8px;
 		box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.1 );
 	}
+}
+
+.commentBox__items--button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  border: none;
+  background: linear-gradient(-90deg, #FD910B 10%, #EF465F 90%, #F5663B 89.74%);
+  color: white;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: -1px -1px 3px rgb(255, 255, 255), 
+    1px 1px 3px rgba(0, 0, 0, 0.2), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.commentBox__items--button:before {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  content: '';
+  box-shadow:inset -1px -1px 3px rgb(255, 255, 255), 
+  inset 1px 1px 3px rgba(0, 0, 0, 0.2);
 }

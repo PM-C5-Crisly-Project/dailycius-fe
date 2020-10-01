@@ -21,14 +21,14 @@ const Nav = () => (
               </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/cart/">
                 <img src={car} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/login">
+              <Link to="/login">
                 <img src={avatar} />
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
