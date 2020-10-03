@@ -3,12 +3,17 @@ import { connect } from "react-redux";
 import "./styles/home.scss";
 import chefImg from "../assets/home/chef.png";
 import batidorHero from "../assets/home/batidor-hero.png";
-import carouselImg from "../assets/home/carousel-images.png";
 import banner from "../assets/home/banner.png";
+import CarrouselItem from "../components/CarrouselItem";
 import Card from "../components/Card";
 import FoodSection from "../components/FoodSection";
 
 function Home({ recipes }) {
+  const [query, setQuery] = React.useState("");
+  const filteredRecipes = recipes.filter((recipe) => {
+    return recipe.name.toLowerCase().includes(query.toLowerCase());
+  });
+
   return (
     <>
       <section className="home-hero">
@@ -25,7 +30,14 @@ function Home({ recipes }) {
 
           <div className="hero__input-container">
             <span className="hero__search-icon"></span>
-            <input type="text" placeholder="Looking for something special?" />
+            <input
+              type="text"
+              placeholder="Looking for something special?"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+              }}
+            />
           </div>
         </section>
       </section>
@@ -39,16 +51,9 @@ function Home({ recipes }) {
           ></button>
           <div className="window">
             <ul className="project-container">
-              <li className="project1-container">
-                <button className="project1 project">
-                  <img
-                    src={carouselImg}
-                    className="project-img"
-                    alt="Mexican food"
-                  />
-                </button>
-                <p className="project__text">Mexican food</p>
-              </li>
+              {filteredRecipes.map((item) => (
+                <CarrouselItem key={item.name} {...item} />
+              ))}
             </ul>
           </div>
           <button
