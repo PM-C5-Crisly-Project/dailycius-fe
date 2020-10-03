@@ -1,25 +1,23 @@
-//coustomHook: con este hook podemos recibir 
+//coustomHook: con este hook podemos recibir
 //informacion de un campo de tipo input text
-//se puede reutilziar en cualquier lugar, 
+//se puede reutilziar en cualquier lugar,
 //ejemplo agregar un comentario
 
-import  { useState } from 'react'
+import { useState } from "react";
 
-export const useForm = (initialState={}) => {
-  
+export const useForm = (initialState = {}) => {
   const [values, setValues] = useState(initialState);
 
   const reset = () => {
-    setValues( initialState)
-  }
+    setValues(initialState);
+  };
 
-  const handleInputChange = ({target}) => {
+  const handleInputChange = ({ target }) => {
     setValues({
       ...values,
-      [target.name]: target.value
+      [target.name]: target.value,
     });
-  } 
+  };
 
-  return [values, handleInputChange, reset]
-
-}
+  return [values, handleInputChange, reset];
+};
