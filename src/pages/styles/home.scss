@@ -180,6 +180,7 @@ a {
 .hero__input-container input {
 
 	width: 95%;
+	color: #818794;
 	height: 100%;
 	margin-left: 10px;
 	border: none;
@@ -211,7 +212,7 @@ a {
 .window {
 
 	width: 1100px;
-	height: 250px;
+	height: 230px;
 	overflow: hidden;
 	padding: 20px;
 	margin: 0 auto;
@@ -221,15 +222,19 @@ a {
 .project__text {
 
 	text-align: center;
-	font-weight: bold;
+	font-weight: lighter;
+	color: #818794;
+	font-size: small;
 
 }
 
 .project-container {
 
-  width: 1700px;
+  max-width: 1200px;
 	left: 0;
 	position: relative;
+	display: flex;
+	justify-content: center;
 
 }
 

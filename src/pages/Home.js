@@ -45,10 +45,7 @@ function Home({ recipes }) {
       <section className="main_section">
         {/* CARRUSEL */}
         <div className="carousel">
-          <button
-            className="arrow arrow-left"
-            aria-label="backward button"
-          ></button>
+          
           <div className="window">
             <ul className="project-container">
               {filteredRecipes.map((item) => (
@@ -56,10 +53,7 @@ function Home({ recipes }) {
               ))}
             </ul>
           </div>
-          <button
-            className="arrow arrow-right"
-            aria-label="forward button"
-          ></button>
+          
         </div>
         {/* END OF CARRUSEL */}
       </section>
