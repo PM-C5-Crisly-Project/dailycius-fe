@@ -1,6 +1,6 @@
 import React  from 'react';
 import CommentBox from '../components/CommentBox'
-import {initialState} from '../index';
+import {initialState} from '../reducers/recipeReducer'
 
 
 

@@ -5,8 +5,18 @@ import logo from "../assets/logo.png";
 import car from "../assets/car.png";
 import avatar from "../assets/avatar.png";
 import search from "../assets/search.png";
+import { useDispatch } from "react-redux";
+import { startLogout } from "../actions/auth";
 
-const Nav = () => (
+const Nav = () => {
+
+  const dispatch = useDispatch()
+
+  const handleLogout = () => {
+    dispatch(startLogout())
+  }
+
+return(
   <div className="header">
     <div className="header__container">
       <Link to="/">
@@ -30,11 +40,19 @@ const Nav = () => (
                 <img src={avatar} />
               </Link>
             </li>
+            <li>
+              <button
+              className='logout-btn'
+                onClick={handleLogout}
+              >
+                Logout
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
-);
+)};
 
 export default Nav;

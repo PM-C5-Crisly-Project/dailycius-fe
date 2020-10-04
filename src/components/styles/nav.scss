@@ -91,3 +91,14 @@
   margin-left: 10px;   
 
 }
+
+.logout-btn {
+  margin-left: 10px;
+  border: none;
+  padding:  5px;
+  background-color: #F5663B;
+  color: #e5e5e5;
+  &:hover {
+    background-color: #EF465F;
+  }
+}

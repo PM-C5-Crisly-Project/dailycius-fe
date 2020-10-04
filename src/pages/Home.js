@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 import "./styles/home.scss";
 import chefImg from "../assets/home/chef.png";
 import batidorHero from "../assets/home/batidor-hero.png";
@@ -8,11 +8,13 @@ import CarrouselItem from "../components/CarrouselItem";
 import Card from "../components/Card";
 import FoodSection from "../components/FoodSection";
 
-function Home({ recipes }) {
+function Home() {
+  const {recipes} = useSelector(state => state.recipes)
   const [query, setQuery] = React.useState("");
   const filteredRecipes = recipes.filter((recipe) => {
     return recipe.name.toLowerCase().includes(query.toLowerCase());
   });
+
 
   return (
     <>
@@ -44,7 +46,7 @@ function Home({ recipes }) {
 
       <section className="main_section">
         {/* CARRUSEL */}
-        <div className="carousel">
+         <div className="carousel">
           
           <div className="window">
             <ul className="project-container">
@@ -54,7 +56,7 @@ function Home({ recipes }) {
             </ul>
           </div>
           
-        </div>
+        </div> 
         {/* END OF CARRUSEL */}
       </section>
       <FoodSection title="Today's Favorites">
