@@ -46,6 +46,19 @@ export const startGoogleLogin = () => {
   }
 }
 
+export const startFacebookLogin = () => {
+  const providerFacebook = new firebase.auth.FacebookAuthProvider()
+  return (dispatch) => {
+    firebase.auth().signInWithPopup(providerFacebook)
+    .then(({user} )=> {
+      dispatch(
+        login(user.uid, user.displayName )
+      )
+    })
+    
+  }
+}
+
 export const login = (uid, displayName) => ({
   type: types.login,
   payload: {

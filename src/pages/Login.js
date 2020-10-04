@@ -6,7 +6,7 @@ import facebookIcon from "../assets/login/facebook.png";
 import { Link } from "react-router-dom";
 import { useForm } from "../hooks/useForm";
 import { useDispatch, useSelector } from "react-redux";
-import { startGoogleLogin, startLoginEmailPassword } from "../actions/auth";
+import { startFacebookLogin, startGoogleLogin, startLoginEmailPassword } from "../actions/auth";
 
 function Login() {
 
@@ -29,6 +29,9 @@ function Login() {
   
   const handleGoogleLogin = () => {
     dispatch(startGoogleLogin())
+  }
+  const handleFacebookLogin = () => {
+    dispatch(startFacebookLogin())
   }
 
   return (
@@ -70,7 +73,9 @@ function Login() {
             >
               <img src={googleIcon} />{" "}
             </div>
-            <div>
+            <div
+              onClick={handleFacebookLogin}
+            >            
               <img src={facebookIcon} />{" "}
             </div>
           </section>
