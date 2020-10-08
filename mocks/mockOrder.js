@@ -30,3 +30,31 @@ orderSchema: {
   isDelivered: true,
   deliveredAt: { type: Date },
 }
+               
+// Mock Generado para test
+               
+{
+    "userId": "5f7a9af408f3fb68f4111fd6",
+    "orderItems": [ 
+        {
+            "name": "Peanut butter and jelly puffs",
+            "qty": 1,
+            "price": 50000
+        }
+    ],
+    "shipping": {
+        "address": "Calle 123 # 20",
+        "city": "Bogotá",
+        "postalCode": "2500001",
+        "country": "Colombia"
+    },
+    "paymentMethod": "paypal",
+    "itemsPrice": 50000,
+    "taxPrice": 9500.35,
+    "shippingPrice": 0,
+    "totalPrice": 59500,
+    "isPaid": true,
+    "paidAt": "2020-10-03",
+    "isDelivered": true,
+    "deliveredAt": "2020-10-03"
+}
